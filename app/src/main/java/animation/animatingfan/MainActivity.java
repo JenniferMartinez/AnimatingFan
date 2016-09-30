@@ -15,10 +15,6 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    private final String TAG = getClass().getSimpleName();
-    private final boolean D = Log.isLoggable(TAG, Log.DEBUG);
-
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -85,11 +81,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
+        
     }
-
-
 
 }
 
