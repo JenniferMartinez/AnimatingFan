@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (power.isChecked()) {
                     Toast.makeText(getApplicationContext(), "Speed 1", Toast.LENGTH_SHORT).show();
-
                     rotate.setDuration(6000);
                     imageView.startAnimation(rotate);
                 }
@@ -69,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (power.isChecked()) {
                     Toast.makeText(getApplicationContext(), "Speed 2", Toast.LENGTH_SHORT).show();
-
                     rotate.setDuration(2500);
                     imageView.startAnimation(rotate);
                 }
