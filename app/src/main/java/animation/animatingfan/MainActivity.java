@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     private final String TAG = getClass().getSimpleName();
     private final boolean D = Log.isLoggable(TAG, Log.DEBUG);
-    private LayoutInflater inflater;
-    private ViewGroup container;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -30,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         if (D) {
             Log.d(TAG, "Starting onCreateView");
         }
-
-//        View rootView = inflater.inflate(R.layout.activity_main, container, false);
 
         final ImageView imageView = (ImageView) findViewById(R.id.fan);
 
@@ -48,13 +44,11 @@ public class MainActivity extends AppCompatActivity {
         power.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //boolean on = ((ToggleButton) v).isChecked();
 
                 if (power.isChecked()) {
                     Toast.makeText(getApplicationContext(), "On", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "Off", Toast.LENGTH_SHORT).show();
-                    //power.setChecked(false);
                 }
 
             }
@@ -101,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         if (D) {
             Log.d(TAG, "onCreateView completed");
         }
-//        return rootView;
+
     }
 
 
