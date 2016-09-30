@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         final ImageView imageView = (ImageView) findViewById(R.id.fan);
 
         final ToggleButton power = (ToggleButton) findViewById(R.id.power);
+
         final RotateAnimation rotate = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF,
                 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        rotate.setDuration(6000);
 
         Button speed1 = (Button) findViewById(R.id.speed1);
         Button speed2 = (Button) findViewById(R.id.speed2);
@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 
 
 }
