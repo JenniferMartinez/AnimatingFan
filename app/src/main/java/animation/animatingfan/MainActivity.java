@@ -25,10 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (D) {
-            Log.d(TAG, "Starting onCreateView");
-        }
-
         final ImageView imageView = (ImageView) findViewById(R.id.fan);
 
         final ToggleButton power = (ToggleButton) findViewById(R.id.power);
@@ -92,9 +88,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if (D) {
-            Log.d(TAG, "onCreateView completed");
-        }
 
     }
 
